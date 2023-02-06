@@ -1,6 +1,6 @@
 import React from "react";
 import './AdBanner.css'
-import salmon from "../../assets/salmon.jpg";
+import salmon from "../assets/salmon.jpg";
 import { Link } from "react-router-dom";
 
 const AdBanner = () => {

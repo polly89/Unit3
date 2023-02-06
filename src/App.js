@@ -2,9 +2,9 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Route, Routes } from 'react-router-dom'
-import HomeScreen from './components/homeComponents/HomeScreen'
-import NewRecipeScreen from './components/newRecipeComponents/NewRecipeScreen'
-import DetailScreen from './components/detailComponents/DetailScreen'
+import HomeScreen from './pages/HomeScreen'
+import NewRecipeScreen from './pages/NewRecipeScreen'
+import DetailScreen from './pages/DetailScreen'
 
 function App() {
   return (

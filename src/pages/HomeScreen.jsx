@@ -1,8 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect }from 'react'
-import AdBanner from './AdBanner'
-import RecipeCard from './RecipeCard'
-import Search from './Search'
+import AdBanner from '../components/AdBanner'
+import Search from '../components/Search'
 
 const HomeScreen = () => {
   const [recipes, setRecipes] = useState([])
@@ -21,15 +20,16 @@ const HomeScreen = () => {
     getRecipes()
   },[])
 
+  const handleSubmit = (search) => {
+    console.log('Do a search with', search)
+  
+  }
+
+
   return (
     <div>
       <AdBanner />
-      <Search />
-      <div className='card-cont'>   
-        <RecipeCard recipes={recipes}/>
-        <RecipeCard recipes={recipes}/>
-        <RecipeCard recipes={recipes}/>
-      </div>
+      <Search onSubmit={handleSubmit} recipes={recipes}/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './RecipeCard.css'
-import food from '../homeComponents/anh-nguyen-iJlYqriF-X0-unsplash.jpg';
+import food from '../assets/anh-nguyen-iJlYqriF-X0-unsplash.jpg';
 
 function RecipeCard(){
     return(
