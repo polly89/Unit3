@@ -22,22 +22,24 @@ function Search ({ onSubmit, recipes }){
         let searchParams = search.toLowerCase()
         return title.includes(searchParams)
     })
+    .slice(0,3)
     .map((recipe, index) => {
         return <RecipeCard recipe={recipe}/>
     })
 
     return (
-        <div>
+        <div >
         <form onSubmit={handleFormSubmit} className='search'>
             <BiSearchAlt2 size="2em" color="#DA7635" />
             <input
+                className='search-bar'
                 placeholder='Search for a recipe!'
                 value={search}
                 onChange={handleChange}
             />
-        </form>
-            <div className='card-cont'>   
-                {recipeDisplay ? recipeDisplay : <h2>No Recipes</h2>}
+        </form >
+            <div className='card-cont' >   
+                {recipeDisplay ? recipeDisplay : (<p>No matches found!</p>)}
             </div>
         </div>
     )

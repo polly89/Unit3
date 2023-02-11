@@ -1,0 +1,75 @@
+.new-recipes-form{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 25vw;
+    margin-top: 5vh;
+}
+.new-recipe-title{
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  font-weight: lighter;
+  padding: 20px;
+}
+.orange-btn{
+    background-color: rgb(255, 140, 0);
+    color:white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 2px; 
+    margin-left: 20vw;
+}
+.user-input{
+  margin: 1vh;
+  width: 20vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.user-input::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.type{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7vw;
+  width: 30vw; 
+}
+.dur-por{
+  width: 12.5vw;
+}
+.ins{
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  align-items: flex-start;
+  justify-self: start;
+  margin-bottom: 2vh;
+}
+.ins::placeholder {
+  transform: translateY(-80px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.locate{
+  margin-left: 20vw;
+}
+.ing-disp{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2vw;
+ 
+}
+.ing-list-disp{
+  display: flex;
+  flex-direction: row;
+}
+textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}

@@ -22,7 +22,6 @@ const HomeScreen = () => {
 
   const handleSubmit = (search) => {
     console.log('Do a search with', search)
-  
   }
 
 

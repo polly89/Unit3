@@ -1,4 +1,4 @@
-form{
+.search{
     width: 30vw;
     height: 35px;
     display: flex;
@@ -14,7 +14,7 @@ form{
 .search svg {
     height: 80%;
   }
-input{
+.search-bar{
     background-color: transparent;
     border: none;
     font-size: medium;

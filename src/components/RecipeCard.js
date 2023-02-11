@@ -1,12 +1,20 @@
+import { useNavigate } from 'react-router-dom';
 import './RecipeCard.css'
-import food from '../assets/anh-nguyen-iJlYqriF-X0-unsplash.jpg';
 
-function RecipeCard(){
+
+function RecipeCard({ recipe }){
+    const navigate = useNavigate()
+    
+    const handleClick = () => {
+        navigate(`/recipe/${recipe.recipe_id}`)
+      }
     return(
-            <div className='card card-hov'>
-                <img src={food} alt="food."/>
-                <p>Description</p>
-                 <button className='blue-btn'>See More</button>
+            <div key={recipe.recipe_name} className='card card-hov'>
+                <div className='image-cont'>
+                  <img src={recipe.image_url} alt="food."/>  
+                </div>
+                <p className='recipe-name'>{recipe.recipe_name}</p>
+                 <button className='blue-btn hov' onClick={handleClick}>See More</button>
             </div>
     )
 }

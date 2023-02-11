@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <h2>Devmountain Eatery</h2>
+      <h2 className="h2-home">Devmountain Eatery</h2>
       <nav>
         <Link to=''>
           <button className="header-btn btn-hov">Home</button>
